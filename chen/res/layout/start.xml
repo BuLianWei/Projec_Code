@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/p" -->
+
+
+    <!--
+<ImageView android:id="@+id/ImageView01" 
+    android:contentDescription="快乐"
+ android:src="@drawable/p" 
+android:layout_width="fill_parent" 
+android:layout_height="match_parent"
+android:scaleType="fitXY"></ImageView>
+    -->
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="fill_parent"
+        android:layout_height="170dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/img1"
+        android:background="@android:color/transparent"
+        android:onClick="startBtn"
+        android:text="按我"
+        android:textColor="#aaee66"
+        android:textSize="35dip" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="112dip"
+        android:background="@drawable/ai_05" />
+
+</RelativeLayout>

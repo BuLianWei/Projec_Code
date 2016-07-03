@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00FF00</color>
+    <color name="theme">#05CBFD</color>
+    <color name="cd">#cdcdcd</color>
+     <color name="cd1">#F4F4F4</color>
+     <color name="cd2">#C9C9C9</color>
+    <color name="sliding_bg">#4C4C4C</color>
+    <color name="text_bg">#00B4EFFE</color>
+    <color name="frame_line">#ffb0b1b7</color>
+    
+    
+    <color name="result_view">#b0000000</color>
+      <color name="viewfinder_mask">#60000000</color>
+      <color name="possible_result_points">#c0ffff00</color> 
+</resources>

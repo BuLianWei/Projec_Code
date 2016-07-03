@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Choose</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_transfer">转盘</string>
+    <string name="action_sortition">抽签</string>
+    <string name="action_dice">骰子</string>
+    <string name="about_me">关于</string>
+    <string name="setting">设置</string>
+    <string name="action_coin">硬币</string>
+    <string name="action_scrape">刮刮乐</string>
+    <string name="msg">选择恐惧者的福音来了，我们专门为害怕做选择的亲们做了一款小程序，通过它可以让您不再焦虑，不再恐惧，快快来试用一下吧！！！！</string>
+    <string name="chat">聊天</string>
+
+    <string name="app_key">23348424</string>
+    <string name="umeng_appkey">99750a9bca78790deba2c95cafc41e19</string>
+    <string name="login">登\t\t\t录</string>
+    <string name="regist">注\t\t\t册</string>
+    <string name="user_name">用户名：</string>
+    <string name="password">密\t\t\t码：</string>a
+    <string name="ok">确定</string>
+    <string name="msg_user_empty">用户名不能为空！</string>
+    <string name="msg_password_empty">密码不能为空！</string>
+    <string name="jump">开启征程</string>
+    <string name="sign">我有我的选择！！！！！</string>
+    <string name="sign_default">我有我的小 C</string>
+    <string name="message">消息</string>
+    <string name="contact">联系人</string>
+
+
+    <!--<string name="app_key">23015524</string>-->
+    <!--<string name="umeng_appkey">5424dc93fd98c58ec20289da</string>-->
+</resources>

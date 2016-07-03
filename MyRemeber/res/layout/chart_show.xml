@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+<!--  <RelativeLayout -->
+<!--      android:layout_width="match_parent" -->
+<!--      android:layout_height="match_parent" -->
+<!--      android:layout_weight="3" > -->
+
+    <com.example.util.MyProgress
+        android:id="@+id/chart_expenditureBar"
+        style="@style/progressBar_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chart_incomeBar"
+        android:layout_alignTop="@+id/chart_incomeBar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/show_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/chart_expenditureBar"
+        android:text="@string/total_expenditure" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/show_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/chart_budgetBar"
+        android:text="@string/balance" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/show_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chart_incomeBar"
+        android:layout_alignParentBottom="true"
+        android:text="@string/total_income" />
+
+    <com.example.util.MyProgress
+        android:id="@+id/chart_incomeBar"
+        style="@style/progressBar_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:layout_toLeftOf="@+id/textView2"
+         />
+
+    <TextView
+        android:id="@+id/chart_expenditureTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chart_incomeTV"
+        android:layout_alignBottom="@+id/chart_incomeTV"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+       android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chart_incomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/chart_expenditureBar"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chart_budgetTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chart_expenditureTV"
+        android:layout_alignBottom="@+id/chart_expenditureTV"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/chart_expenditureBar"
+         android:gravity="center"
+         android:visibility="gone"
+        android:textStyle="bold" />
+
+    <com.example.util.MyProgress
+        android:id="@+id/chart_budgetBar"
+        style="@style/progressBar_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/chart_expenditureBar"
+        android:layout_alignBottom="@+id/chart_expenditureBar"
+        android:layout_marginRight="28dp" />
+
+<!-- </RelativeLayout> -->
+
+ <TextView
+     android:id="@+id/textView4"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/show_number_tv"
+     android:text="@string/expenditure" />
+
+ <ListView
+     android:id="@+id/listView1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="4" >
+ </ListView>
+
+ <TextView
+     android:id="@+id/TextView01"
+     style="@style/show_number_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/imcome" />
+
+ <ListView
+     android:id="@+id/listView2"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="4" >
+ </ListView>
+
+</LinearLayout>

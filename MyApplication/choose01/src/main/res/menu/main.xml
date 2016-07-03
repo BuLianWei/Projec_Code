@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_transfer"
+        android:orderInCategory="100"
+        android:title="@string/action_transfer"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_coin"
+        android:orderInCategory="100"
+        android:title="@string/action_coin"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="100"
+        android:title="@string/action_sortition"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_scrape"
+        android:orderInCategory="100"
+        android:title="@string/action_scrape"
+        app:showAsAction="never"/>
+</menu>

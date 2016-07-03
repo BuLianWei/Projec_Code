@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/my"
+        android:layout_width="110dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="生日"
+        android:singleLine="true"
+        android:textColor="#00ff00"
+        android:textSize="50dip" />
+
+    <TextView
+        android:id="@+id/te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="密码"
+        android:textColor="#990099"
+        android:textSize="50dip" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:text="登录"
+        android:textColor="#22bbff"
+        android:textSize="50dip" />
+
+    <b.app.flashplay
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="230dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my"
+        android:layout_marginTop="112dip" />
+
+</RelativeLayout>

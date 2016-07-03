@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/add_detail_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/camera" />
+
+        <EditText
+            android:id="@+id/add_detail_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="right|bottom"
+            android:hint="@string/add_detail_money_hint"
+            android:inputType="numberDecimal"
+            android:textSize="30sp"
+            android:maxLength="7"
+            android:background="@null"
+            android:textStyle="bold" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:background="@color/cd" />
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/relativeLayout1" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/ok" -->
+<!--         android:layout_alignLeft="@+id/textView4" -->
+<!--         android:layout_alignRight="@+id/textView4" -->
+<!--         android:layout_below="@+id/textView4" -->
+<!--         android:layout_marginTop="14dp" -->
+<!--         android:orientation="vertical" > -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <TextView -->
+<!--             android:id="@+id/textView7" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="1dp" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_below="@+id/add_detail_calculate" -->
+<!--             android:layout_marginTop="5dp" -->
+<!--             android:background="@color/cd" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView1" -->
+<!--                 style="@style/show_number_tv" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/price" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/editText4" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="0.09" -->
+<!--                 android:text="20.00" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView6" -->
+<!--                 style="@style/show_number_tv" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/number" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/editText2" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="0.29" -->
+<!--                 android:text="10" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/add_detail_calculate" -->
+<!--                 style="?android:attr/buttonStyleSmall" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:background="@color/theme" -->
+<!--                 android:text="@string/total_price" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/textView10" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="1dp" -->
+<!--             android:layout_marginTop="5dp" -->
+<!--             android:background="@color/cd" /> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" > -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView8" -->
+<!--                 style="@style/show_number_tv" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/amount" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/editText3" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="1000.00" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView9" -->
+<!--                 style="@style/show_number_tv" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="@string/expenditure" /> -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/editText1" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="20.20" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/button1" -->
+<!--                 style="?android:attr/buttonStyleSmall" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:background="@color/theme" -->
+<!--                 android:text="@string/change" /> -->
+<!--         </LinearLayout> -->
+<!--     </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/show_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_detail_time" />
+
+        <TextView
+            android:id="@+id/add_detail_date"
+            style="@style/show_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/show_number_tv"
+            android:text="@string/add_detail_type" />
+
+        <TextView
+            android:id="@+id/add_detail_type"
+            style="@style/show_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/show_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:text="@string/add_detail_content" />
+
+        <EditText
+            android:id="@+id/add_detail_content"
+            style="@style/show_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+             android:layout_weight="1"
+            android:text="吃饭" />
+
+        <ImageView
+            android:id="@+id/add_detail_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:layout_weight="1.5"
+            android:src="@drawable/arrow_bottom" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cd" />
+
+    <include
+        layout="@layout/ok_cancel" />
+
+</LinearLayout>

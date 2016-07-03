@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp" 
+       android:padding="5dp"
+        android:background="@drawable/ump_btn_payagain_normal">
+     <LinearLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:id="@+id/bar_layout">
+
+         <ImageView
+                android:id="@+id/bar_im01"
+                android:layout_width="27dip"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_comment_photo_browser_back" />
+
+            <ImageView
+                android:id="@+id/bar_im02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launch" />
+        <TextView
+            android:id="@+id/bar_tv01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="TextView" />
+			</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.18" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bar_img03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_map" />
+
+        <ImageView
+            android:id="@+id/bar_img04"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.21"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/bar_tv02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_bind_phone_num_step_bg"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/bar_tv03"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/black"
+             android:drawableRight="@drawable/ic_bind_phone_num_step_bg"
+            android:text="@string/hello_world" />
+
+        <TextView
+            android:id="@+id/bar_tv04"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/black"
+             android:drawableRight="@drawable/ic_bind_phone_num_step_bg"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/bar_tv05"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="@color/black"
+            android:text="TextView" />
+    </LinearLayout>
+
+</LinearLayout>

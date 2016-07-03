@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\aliwx_play_completed.mp3",
+        "source": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\aliwx_play_completed.mp3"
+    },
+    {
+        "merged": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\aliwx_itemmatch.xml",
+        "source": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\aliwx_itemmatch.xml"
+    },
+    {
+        "merged": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\aliwx_sent.mp3",
+        "source": "E:\\WorkSpace\\StudioSpace\\MyApplication\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\aliwx_sent.mp3"
+    }
+]

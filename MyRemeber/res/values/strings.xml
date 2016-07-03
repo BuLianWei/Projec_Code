@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">随记</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="shouruzonge">收入总额：</string>
+    <string name="zhichuzonge">支出总额：</string>
+    <string name="yusuanyue">预算余额：</string>
+    <string name="taday">今天</string>
+    <string name="current_month">本月</string>
+    <string name="current_week">本周</string>
+    <string name="remember">记一笔</string>
+    <string name="price">单价：</string>
+    <string name="number">数量：</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="remember_record">记账</string>
+    <string name="total_price">总价</string>
+    
+    <string name="amount">总额：</string>
+    <string name="expenditure">支付：</string>
+    <string name="imcome">收入：</string>
+    <string name="balance">总余额</string>
+    <string name="change">找零</string>
+    <string name="total_income">总收入</string>
+    <string name="total_expenditure">总支出</string>
+    <string name="total_balance">总预算</string>
+    <string name="show">主页</string>
+    <string name="add_record">记账</string>
+    <string name="chart_show">图表</string>
+    <string name="add_detail_income">收入</string>
+    <string name="add_detail_expenditure">支出</string>
+    <string name="add_detail_time">时间：</string>
+    <string name="add_detail_type">类型：</string>
+    <string name="add_detail_content">内容：</string>
+    <string name="add_detail_money_hint">请您输入金额</string>
+    <string name="tishi">亲！ 金额不能为空呀！！！</string>
+    <string name="scanning">扫一扫</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="setting">设置</string>
+    <string name="set_budget">设置预算</string>
+    <string name="general_budget">总预算：</string>
+    <string name="avaiable">可用:</string>
+    <string name="used">已用:</string>
+    <string name="note_taking">账目随记</string>
+    <string name="save">保存</string>
+    <string name="delete">恢复设置</string>
+    <string name="set_balance">设置预算</string>
+    <string name="week_detail">本周明细</string>
+    <string name="week_income">本周收入</string>
+    <string name="week_expenditure">本周支出</string>
+    <string name="week_budget">本周预算</string>
+    
+    <string name="month_detail">本月明细</string>
+     <string name="month_income">本月收入</string>
+    <string name="month_expenditure">本月支出</string>
+    <string name="month_budget">本月预算</string>
+    
+    <string name="about">关于随记</string>
+    <string name="version">系统版本：</string>
+    <string name="about_msg">&#160;&#160;&#160;&#160; 竭力创新，推崇原创\n
+         本产品由伟氏家族独家研发</string>
+    <string name="analyze_msg0">&#160;&#160;&#160;&#160; 亲！！！还没有你的消费记录！\n
+        </string>
+    <string name="analyze_msg1">&#160;&#160;&#160;&#160; 亲！！！消费很合理哦，要继续保持啊！\n
+        </string>
+    <string name="analyze_msg2">&#160;&#160;&#160;&#160; 亲，你的消费记录有点入不敷出啊！注意啦！\n
+         </string>
+    <string name="analyze_msg3">&#160;&#160;&#160;&#160; 债务累累，没钱花啦！</string>
+    <string name="delete_title">恢复预算</string>
+    <string name="delete_msg">亲，您确定要恢复预算设置吗？</string>
+    <string name="content_title">清空内容</string>
+    <string name="content_msg">亲，您确定要清除全部内容吗？</string>
+    <string name="content_toast">亲，好没有添加内容哦！</string>
+    <string name="restore_software">恢复软件</string>
+    <string name="restore_software_msg">亲，您想好了要恢复软件清除所有数据吗！</string>
+    
+
+</resources>
