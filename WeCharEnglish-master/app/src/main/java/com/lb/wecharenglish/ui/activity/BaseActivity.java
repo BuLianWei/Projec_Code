@@ -104,6 +104,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * actionbar里面添加收藏按钮
      */
     private ShineButton sb_base_actionbar_like;
+    protected TextView all;
 
 
     //===Desc:复写父类中的方法===============================================================================
@@ -220,6 +221,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         tv_base_actionbar_title = ViewUtil.findViewById(actionBarView, R.id.tv_base_actionbar_title);
         //收藏按钮
         sb_base_actionbar_like = ViewUtil.findViewById(actionBarView, R.id.sb_base_actionbar_like);
+
+   all=ViewUtil.findViewById(actionBarView, R.id.all);
     }
 
     //===Desc:子类必须实现===============================================================================================
@@ -350,15 +353,29 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     protected void setActionBarDatas(boolean showBackBtn, String title,
                                      boolean showLikeBtn,
                                      boolean likeBtnChecked,
-                                     View.OnClickListener listener) {
+                                     View.OnClickListener listener,boolean showAll,View.OnClickListener allListener) {
         tv_base_actionbar_title.setFocusable(true);
         actionBar.setDisplayHomeAsUpEnabled(showBackBtn);
         setActionBarTitle(title);
         showLikeBtn(showLikeBtn);
+        showAll(showAll);
+        if (showAll){
+            setAllListener(allListener);
+        }
         //如果收藏按钮不显示就不需要设置属性了
         if (showLikeBtn) {
             setLikeChecked(likeBtnChecked);
             setListClicklistener(listener);
         }
+    }
+
+    private void setAllListener(View.OnClickListener allListener) {
+        if (all.getVisibility()==View.VISIBLE){
+            all.setOnClickListener(allListener);
+        }
+    }
+
+    private void showAll(boolean showAll) {
+        all.setVisibility(showAll ? View.VISIBLE : View.GONE);
     }
 }

@@ -59,7 +59,25 @@
                     android:textColor="@color/color_txt_white"
                     android:textSize="@dimen/size_txt_big"
                     tools:text="shafei" />
+                <LinearLayout
+                    android:id="@+id/ll_main_menu_sortition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center">
 
+                    <TextView
+                        android:id="@+id/tv_main_menu_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/txt_sortition"
+                        android:textColor="@color/color_txt_white"
+                        android:textSize="@dimen/size_txt_center" />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/ll_main_menu_setting"
                     android:layout_width="match_parent"
@@ -79,43 +97,26 @@
                         android:textSize="@dimen/size_txt_center" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/ll_main_menu_showLike"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
 
-                    <TextView
-                        android:id="@+id/tv_main_menu_like"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="8dp"
-                        android:gravity="center"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:text="@string/txt_show_like"
-                        android:textColor="@color/color_txt_white"
-                        android:textSize="@dimen/size_txt_center" />
-                </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/ll_main_menu_export"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center">
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_main_menu_export"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center">-->
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawablePadding="8dp"
-                        android:gravity="center"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"
-                        android:text="@string/txt_export"
-                        android:textColor="@color/color_txt_white"
-                        android:textSize="@dimen/size_txt_center"
-                        android:visibility="gone"/>
-                </LinearLayout>
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawablePadding="8dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:text="@string/txt_export"-->
+                        <!--android:textColor="@color/color_txt_white"-->
+                        <!--android:textSize="@dimen/size_txt_center"-->
+                        <!--android:visibility="gone"/>-->
+                <!--</LinearLayout>-->
             </LinearLayout>
         </ScrollView>
     </android.support.v4.widget.DrawerLayout>

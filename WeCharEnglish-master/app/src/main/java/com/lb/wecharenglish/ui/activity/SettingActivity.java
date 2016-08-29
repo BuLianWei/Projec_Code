@@ -145,7 +145,7 @@ public class SettingActivity extends BaseActivity {
 
     @Override
     protected void setViewData() {
-        setActionBarDatas(true, getString(R.string.txt_setting), false, false, null);
+        setActionBarDatas(true, getString(R.string.txt_setting), false, false, null,false,null);
         pb_setting_synchronousing.setVisibility(View.GONE);
     }
 

@@ -23,11 +23,11 @@ import com.lb.wecharenglish.domain.EnglishBean;
 import com.lb.wecharenglish.global.Keys;
 import com.lb.wecharenglish.server.EnglishServer;
 import com.lb.wecharenglish.service.TimingTaskService;
+import com.lb.wecharenglish.sortition.SortitionActivity;
 import com.lb.wecharenglish.ui.activity.BaseActivity;
 import com.lb.wecharenglish.ui.activity.EnglishDetailActivity;
 import com.lb.wecharenglish.ui.activity.SettingActivity;
 import com.lb.wecharenglish.ui.adapter.HomeAdapter;
-import com.lb.wecharenglish.utils.PermissionUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -72,12 +72,12 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
     /**
      * 侧滑菜单显示我的收藏按钮
      */
-    private LinearLayout ll_main_menu_showLike;
+    private LinearLayout ll_main_menu_sortition;
 
-    /**
-     * 侧滑菜单导出功能按钮
-     */
-    private LinearLayout ll_main_menu_export;
+//    /**
+//     * 侧滑菜单导出功能按钮
+//     */
+//    private LinearLayout ll_main_menu_export;
 
 
     //===Desc:复写父类的方法===============================================================================================
@@ -104,15 +104,15 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
         sv_main_leftmenu = ViewUtil.findViewById(this, R.id.sv_main_leftmenu);
         tv_main_menu_username = ViewUtil.findViewById(this, R.id.tv_main_menu_username);
         ll_main_menu_setting = ViewUtil.findViewById(this, R.id.ll_main_menu_setting);
-        ll_main_menu_showLike = ViewUtil.findViewById(this, R.id.ll_main_menu_showLike);
-        ll_main_menu_export = ViewUtil.findViewById(this, R.id.ll_main_menu_export);
+        ll_main_menu_sortition = ViewUtil.findViewById(this, R.id.ll_main_menu_sortition);
+//        ll_main_menu_export = ViewUtil.findViewById(this, R.id.ll_main_menu_export);
 
     }
 
     @Override
     protected void setViewData() {
 
-        setActionBarDatas(false, getString(R.string.app_name), false, false, null);
+        setActionBarDatas(false, getString(R.string.app_name), false, false, null,true,this);
         //如果是返回当前界面，不是重新创建就不请求服务器加载数据了
         if (!isResume)
             sr_main_refresh.post(new Runnable() {
@@ -201,8 +201,8 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
 
         //设置按钮点击事件
         ll_main_menu_setting.setOnClickListener(this);
-        ll_main_menu_showLike.setOnClickListener(this);//显示我的收藏
-        ll_main_menu_export.setOnClickListener(this);//导出md文档
+        ll_main_menu_sortition.setOnClickListener(this);//显示我的收藏
+//        ll_main_menu_export.setOnClickListener(this);//导出md文档
     }
 
     @Override
@@ -328,17 +328,17 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
                 startActivity(settingIntent);
                 dl_main_drawermenu.closeDrawers();
                 break;
-            case R.id.ll_main_menu_showLike://显示我的收藏或者全部
+            case R.id.all://显示我的收藏或者全部
                 TextView tv_main_menu_like = ViewUtil.findViewById(rootView, R.id.tv_main_menu_like);
                 //更新数据源，将页面listView
                 List<EnglishBean> list;
                 //调用业务层
                 if (!isShowLike) {
                     //需要显示都长的
-                    tv_main_menu_like.setText(getResources().getString(R.string.txt_show_all));
+                    all.setText(getResources().getString(R.string.txt_all));
                     list = new EnglishServer().getDataByPage(mContext, 1, 1, pageSize);
                 } else {
-                    tv_main_menu_like.setText(getResources().getString(R.string.txt_show_like));
+                    all.setText(getResources().getString(R.string.txt_like));
                     list = new EnglishServer().getDataByPage(mContext, 0, 1, pageSize);
                 }
                 //清空listView数据源，设置为当前常寻道的数据
@@ -350,13 +350,17 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
                 dl_main_drawermenu.closeDrawers();
                 break;
 
-            case R.id.ll_main_menu_export:
-                PermissionUtil.requestPermission(this, PermissionUtil.EXTERNAL_STORAGE_REQ_CODE, new Runnable() {
-                    @Override
-                    public void run() {
-                        export();
-                    }
-                });
+//            case R.id.ll_main_menu_export:
+//                PermissionUtil.requestPermission(this, PermissionUtil.EXTERNAL_STORAGE_REQ_CODE, new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        export();
+//                    }
+//                });
+//                break;
+
+            case R.id.ll_main_menu_sortition:
+                startActivity(new Intent(MainActivity.this, SortitionActivity.class));
                 break;
         }
     }

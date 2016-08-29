@@ -101,7 +101,7 @@ public class EnglishDetailActivity extends BaseActivity {
 
     @Override
     protected void setViewData() {
-        setActionBarDatas(true, englishBean.getTitle(), true, englishBean.isLike(), this);
+        setActionBarDatas(true, englishBean.getTitle(), true, englishBean.isLike(), this,false,null);
 
         tv_detail_title.setText(englishBean.getTitle());
         String time = new SimpleDateFormat(
