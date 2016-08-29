@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.lb.wecharenglish"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0.1"
+    }
+
+//    signingConfigs {
+//        release {
+//            storeFile file('../sign/EnglishKeyStory.jks')
+//            storePassword 'IceLee'
+//            keyAlias "wechar_rss"
+//            keyPassword 'IceLee'
+//        }
+//        debug {
+//            storeFile file('../sign/EnglishKeyStory.jks')
+//            storePassword 'IceLee'
+//            keyAlias "wechar_rss"
+//            keyPassword 'IceLee'
+//        }
+//    }
+
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+//        debug {
+//            signingConfig signingConfigs.debug
+//
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        abortOnError true
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+//            edian_channel_01_v1.1.6_360手机助手
+            //1.创建 edian_v
+            def firstName = "everyday_v";
+
+            //3.获取清单文件中的版本号
+            def versionName = versionName;
+            //4.根基标示渠道号填写对应的渠道商店
+
+            //5.构建类型 是否是debug等
+            def buildType = "";
+            if (variant.buildType.name.equals('release')) {
+                buildType = "release_";
+            } else if (variant.buildType.name.equals('debug')) {
+                buildType = "debug_";
+            }
+            def releaseApkName = buildType + firstName + versionName  + '.apk'
+
+//            + "_" + getDate()
+            output.outputFile = new File(oldFile.parent as File, releaseApkName)
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.lb:utils:1.0.2'
+    compile 'org.jsoup:jsoup:1.9.2'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.lb:materialdesigndialog:1.0.1'
+    //    nohttp网络请求框架
+    compile 'com.yolanda.nohttp:nohttp:1.0.0'
+    //点赞
+    compile 'com.sackcentury:shinebutton:0.1.2'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}
