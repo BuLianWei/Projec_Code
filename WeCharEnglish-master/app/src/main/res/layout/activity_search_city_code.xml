@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       tools:context="com.example.weather.SearchCityCodeActivity" 
+       android:background="@drawable/background">
+       <ImageView 
+           android:id="@+id/sea_finish_img"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/search"          
+           />
+<AutoCompleteTextView 
+    android:id="@+id/search_edit_actv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_toLeftOf="@+id/sea_finish_img"
+    android:layout_alignBottom="@+id/sea_finish_img"
+    android:textSize="20sp"   
+    android:singleLine="true"
+    android:hint="请输入城市名称"
+    />
+  
+
+</RelativeLayout>

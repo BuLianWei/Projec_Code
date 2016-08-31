@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    <TextView 
+        android:id="@+id/fu_week_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="星期三"
+        />
+    <TextView 
+        android:id="@+id/fu_weather_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="晴   南风    4级"
+        />
+    <TextView 
+        android:id="@+id/fu_tem_tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="22℃~30℃"
+        />
+    
+
+</LinearLayout>

@@ -28,6 +28,7 @@ import com.lb.wecharenglish.ui.activity.BaseActivity;
 import com.lb.wecharenglish.ui.activity.EnglishDetailActivity;
 import com.lb.wecharenglish.ui.activity.SettingActivity;
 import com.lb.wecharenglish.ui.adapter.HomeAdapter;
+import com.lb.wecharenglish.weather.WeatherActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -74,6 +75,8 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
      */
     private LinearLayout ll_main_menu_sortition;
 
+    private LinearLayout ll_main_menu_weather;
+
 //    /**
 //     * 侧滑菜单导出功能按钮
 //     */
@@ -105,6 +108,7 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
         tv_main_menu_username = ViewUtil.findViewById(this, R.id.tv_main_menu_username);
         ll_main_menu_setting = ViewUtil.findViewById(this, R.id.ll_main_menu_setting);
         ll_main_menu_sortition = ViewUtil.findViewById(this, R.id.ll_main_menu_sortition);
+        ll_main_menu_weather = ViewUtil.findViewById(this, R.id.ll_main_menu_weather);
 //        ll_main_menu_export = ViewUtil.findViewById(this, R.id.ll_main_menu_export);
 
     }
@@ -202,6 +206,7 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
         //设置按钮点击事件
         ll_main_menu_setting.setOnClickListener(this);
         ll_main_menu_sortition.setOnClickListener(this);//显示我的收藏
+        ll_main_menu_weather.setOnClickListener(this);//显示我的收藏
 //        ll_main_menu_export.setOnClickListener(this);//导出md文档
     }
 
@@ -349,7 +354,9 @@ public class MainActivity extends BaseActivity implements SwipeRefreshLayout.OnR
                 //关闭菜单
                 dl_main_drawermenu.closeDrawers();
                 break;
-
+            case R.id.ll_main_menu_weather:
+                startActivity(new Intent(MainActivity.this, WeatherActivity.class));
+                break;
 //            case R.id.ll_main_menu_export:
 //                PermissionUtil.requestPermission(this, PermissionUtil.EXTERNAL_STORAGE_REQ_CODE, new Runnable() {
 //                    @Override

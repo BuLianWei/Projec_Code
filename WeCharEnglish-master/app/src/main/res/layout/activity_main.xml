@@ -58,6 +58,7 @@
                     android:layout_marginTop="8dp"
                     android:textColor="@color/color_txt_white"
                     android:textSize="@dimen/size_txt_big"
+                    android:padding="10dp"
                     tools:text="shafei" />
                 <LinearLayout
                     android:id="@+id/ll_main_menu_sortition"
@@ -75,6 +76,25 @@
                         android:paddingBottom="10dp"
                         android:paddingTop="20dp"
                         android:text="@string/txt_sortition"
+                        android:textColor="@color/color_txt_white"
+                        android:textSize="@dimen/size_txt_center" />
+                </LinearLayout>
+                    <LinearLayout
+                    android:id="@+id/ll_main_menu_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_main_menu_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/txt_weather"
                         android:textColor="@color/color_txt_white"
                         android:textSize="@dimen/size_txt_center" />
                 </LinearLayout>

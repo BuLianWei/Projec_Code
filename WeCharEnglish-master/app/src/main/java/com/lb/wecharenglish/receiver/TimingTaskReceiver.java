@@ -116,7 +116,7 @@ public class TimingTaskReceiver extends BroadcastReceiver {
 
 
 //        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,
-//                new Intent(context, MainActivity.class), 0);
+//                new Intent(context, WeatherActivity.class), 0);
 //
 //        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 //        Notification notification = new Notification();

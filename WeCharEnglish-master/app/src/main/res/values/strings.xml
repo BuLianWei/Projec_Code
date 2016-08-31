@@ -11,6 +11,7 @@
     <string name="txt_synchronous">同步远程数据库</string>
     <string name="txt_backup">备份数据</string>
     <string name="txt_sortition">抽签</string>
+    <string name="txt_weather">天气</string>
 
 
 </resources>
